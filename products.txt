@@ -1,0 +1,3 @@
+P001 Laptop 799.99
+P002 Phone 499.99
+P003 Headphones 99.99
