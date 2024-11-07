@@ -8,13 +8,16 @@ class Product {
 public:
     std::string productID;
     std::string name;
+    std::string category; // Category field added
     double price;
 
-    Product(std::string id, std::string n, double p) : productID(id), name(n), price(p) {}
+    Product(std::string id, std::string n, std::string cat, double p) 
+        : productID(id), name(n), category(cat), price(p) {}
+
     void display() const;
 };
 
-// Declare the loadProducts function to be defined in Product.cpp
+// Declaration of loadProducts to be defined in Product.cpp
 std::vector<Product> loadProducts();
 
 #endif

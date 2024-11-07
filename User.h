@@ -2,24 +2,24 @@
 #define USER_H
 
 #include <string>
-#include <fstream>
-#include <iostream>
-#include <unordered_map>
 
 class User {
+private:
     std::string userID;
-    std::string username;
     std::string password;
-    bool isLoggedIn = false;
+    std::string username;
 
 public:
     User() = default;
+    User(const std::string& id, const std::string& pass, const std::string& name)
+        : userID(id), password(pass), username(name) {}
 
-    bool signUp(const std::string& uname, const std::string& pass);
-    bool login(const std::string& uname, const std::string& pass);
-    bool isUserLoggedIn() const { return isLoggedIn; }
+    bool login();  // Declaration for the login function
     std::string getUserID() const { return userID; }
-    std::string getUsername() const { return username; }
+
+    // Helper functions for user management
+    static bool validateCredentials(const std::string& id, const std::string& pass);
+    static bool registerUser(const std::string& id, const std::string& pass, const std::string& name);
 };
 
 #endif

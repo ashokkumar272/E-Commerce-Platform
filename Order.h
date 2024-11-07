@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <unordered_set>
 #include "Product.h"
 #include "User.h"
 
@@ -20,6 +21,7 @@ public:
 
     static void placeOrder(const User& user, const Product& product, int quantity);
     static void showOrderHistory(const std::string& userID);
+    static void recommendProducts(const std::string& userID, const std::vector<Product>& allProducts);
 };
 
 #endif

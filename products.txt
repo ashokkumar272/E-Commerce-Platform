@@ -1,3 +1,7 @@
-P001 Laptop 799.99
-P002 Phone 499.99
-P003 Headphones 99.99
+P001 Laptop Electronics 799.99
+P002 Phone Electronics 499.99
+P003 Headphones Accessories 99.99
+P004 Tablet Electronics 399.99
+P005 Charger Accessories 29.99
+P006 Book Literature 19.99
+

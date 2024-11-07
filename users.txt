@@ -1,4 +1,1 @@
-john password123
-jane password321
-ashok_kumar Ashok@123
-sujan_chaudhary Sujan@123
+ashok_kumar Ashok@123 ashok_kumar
